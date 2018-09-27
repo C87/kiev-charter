@@ -1,0 +1,68 @@
+<div class="container">
+  <div class="banner">
+    <div class="header">
+      <h1>UCL Final</h1>
+      <div class="match">
+        <div class="badge-1">
+          <img class="badge" src="assets/png/liverpool-badge.png"/>
+        </div>
+        <div class="badge-2">
+          <img class="badge" src="assets/png/real-badge.png"/>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="article">
+    <h1>Charter Information</h1>
+    <h3>Direct Return Flights Liverpool to Kiev</h3>
+    <h3>26th May - 27th May</h3>
+    <h3>£500 Per Person</h3>
+  </div>
+  <div class="info">
+    <h3>Flight itinerary</h3>
+    <h5>All times are local</h5>
+    <div class="flight-info">
+      <div class="flight">
+        <h3>Saturday 26th May</h3>
+        <p>07:00 DEP Liverpool John Lennon Aiport</p>
+        <p>17:00 ARR Kiev Zhuliany International Aiport</p>
+      </div>
+      <div class="flight">
+        <h3>Sunday 27th May</h3>
+        <p>10:00 DEP Kiev Zhuliany International Aiport</p>
+        <p>17:00 ARR Liverpool John Lennon Aiport</p>
+      </div>
+    </div>
+  </div>
+  <div class="additional-info">
+    <h5>Additional Information</h5>
+    <p>Check in as a group, make sure to bring email proof of purchase and passport.</p>
+  </div>
+  <div class="packages">
+    <h3>Bookings</h3>
+    {% for item in items %}
+    <div class="booking">
+      <h3>{{ item.description }}<span>{{ item.cost }}</span></h3>
+      <div class="book">
+        <form action="/{{ item.route }}" method="POST">
+          <script
+            src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+            data-key="pk_test_T8SmoN6hqfwYpf5oZczZGWqN"
+            data-amount="{{ item.amount }}"
+            data-name="Kiev Charter Flight"
+            data-description="Liverpool to Kiev return: {{ item.description }}"
+            data-image="https://vignette.wikia.nocookie.net/liverpoolfc/images/b/b2/Liverbird.png/revision/latest?cb=20110619003347"
+            data-locale="auto"
+            data-currency="gbp">
+          </script>
+        </form>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  <div class="contact">
+    <h5>Contact</h5>
+    <p>Email: team@kievcharter.com</p>
+    <p>Phone: +440000000000</p>
+  </div>
+</div>

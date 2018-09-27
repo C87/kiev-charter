@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #eeee;
+}
+
+.nav {
+  background-color: #9b1010;
+  border-bottom: 1px solid #7d7776;
+  height: 50px;
+  width: 100%;
+  z-index: 3;
+}
+
+.nav-container {
+  margin: auto;
+  max-width: 600px;
+}
+
+.logo {
+  display: inline-block;
+  height: 50px;
+}
+
+.container,
+.results-container {
+  background-color: #ffff;
+  margin: auto;
+  margin-top: 1px;
+  max-width: 600px;
+  min-height: 90vh;
+  min-width: 320px;
+  width: 100%;
+}
+
+.results-container > h1 {
+  border-bottom: 1px solid #f0e2e2;
+  font-family: 'Poppins';
+  font-size: 22px;
+  line-height: 2;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.results-container > p {
+  font-size: 16px;
+  font-weight: lighter;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.results-container > a {
+  all: unset;
+}
+
+.results-container > a {
+  background-color: #9b1010;
+  border-radius: 5px;
+  color: #ffff;
+  font-size: 16px;
+  display: block;
+  font-size: 16px;
+  font-weight: lighter;
+  margin: auto;
+  margin-top: 50px;
+  width: 150px;
+  padding: 15px 0;
+  text-align: center;
+}
+
+.results-container > a:hover {
+  cursor: pointer;
+}
+
+.banner {
+  background-color: #ffffff;
+  background-image: url('../assets/images/landing.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  height: 400px;
+  width: 100%;
+}
+
+.header {
+  margin: auto;
+  z-index: 2;
+  display: grid;
+  width: 90%;
+}
+
+.header > h1 {
+  border: 2px solid white;
+  color: #ffffff;
+  font-size: 30px;
+  grid-row: 1 / 1;
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.match {
+  grid-row: 2/2;
+  display: flex;
+}
+
+.badge-1 {
+  flex: 1;
+}
+
+.badge-2 {
+  flex: 1;
+}
+
+.badge {
+  height: 100px;
+  display: block;
+  margin: 20px auto;
+}
+
+.article > h1 {
+  border-bottom: 1px solid #f0e2e2;
+  font-family: 'Poppins';
+  font-size: 22px;
+  line-height: 2;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.article > h3 {
+  font-size: 16px;
+  font-weight: lighter;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.info > h3 {
+  font-family: 'Poppins';
+  font-size: 19px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.info > h5 {
+  font-size: 16px;
+  font-weight: lighter;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.flight {
+  flex: 1;
+  padding: 20px 0px 0px 0px;
+}
+
+.flight > h3 {
+  font-family: 'Poppins';
+  font-size: 16px;
+  font-weight: lighter;
+  margin-left: 20px;
+}
+
+.flight > p {
+  font-size: 14px;
+  font-weight: lighter;
+  margin-left: 20px;
+  line-height: 1.5;
+}
+
+.additional-info > h5 {
+  font-family: 'Poppins';
+  font-size: 16px;
+  font-weight: lighter;
+  margin-left: 20px;
+  margin-top: 30px;
+}
+
+.additional-info > p {
+  font-size: 14px;
+  font-weight: lighter;
+  margin-left: 20px;
+  line-height: 1.5;
+}
+
+.packages {
+  padding-bottom: 50px;
+  width: 100%
+}
+
+.packages > h3 {
+  font-family: 'Poppins';
+  font-size: 25px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.booking {
+  align-items: center;
+  border-bottom: 1px solid #f0e2e2;
+  display: flex;
+  padding: 20px;
+  width: 100%;
+}
+
+.booking:last-child {
+  border-bottom: none;
+}
+
+.booking > h3 {
+  flex: 1;
+  font-size: 14px;
+  text-align: center;
+}
+
+.booking span::before {
+  content: "\00a0 ";
+}
+
+.booking span {
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+.book {
+  flex: 1;
+}
+
+.footer {
+  background-color: #9b1010;
+  height: 50px;
+  width: 100%;
+}
+
+.copyright {
+  color: #eeee;
+  font-size: 12px;
+  font-weight: lighter;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.contact {
+  padding-bottom: 50px;
+  text-align: center;
+  width: 100%;
+}
+
+.contact > h5 {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.contact  p {
+  font-size: 14px;
+  font-weight: lighter;
+  line-height: 1.5;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Media Queries
+/* -------------------------------------------------------------------------- */
+
+@media (min-width: 480px) {
+  .badge {
+    height: 150px;
+    display: block;
+    margin: 40px auto;
+  }
+
+  .header {
+    width: 70%;
+  }
+
+  .header > h1 {
+    padding: 20px;
+  }
+}

@@ -1,0 +1,11 @@
+<div class="results-container">
+  {% if amount %}
+  <h1>Confirmation</h1>
+  <p>{{ description }}</p>
+  <p>{{ amount }}{{ currency }} has been deducted from your account</p>
+  <p>Status: {{ outcome }}</p>
+  {% else %}
+  <p>There has been an error</p>
+  {% endif %}
+  <a href="/">Home Page</a>
+</div>
