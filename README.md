@@ -4,7 +4,7 @@ Simple charter booking site
 
 ## Description
 
-Made with Node, Express and Stripe API.
+Booking page for a fictional plane charter company arranging flights to the UEFA Champions League Final using Stripe Checkout.
 
 ## License
 
